@@ -9,7 +9,7 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: #1e1e1e;
-    color: #f7f7f7;
+    color: #1e1e1e;
     max-width: 900px;
     margin: 0 auto;
     padding: 30px 20px;
@@ -47,9 +47,10 @@ header {
 section {
     margin-top: 40px;
     padding: 25px;
-    background-color: #2e2e3a;
+    background-color: #fcb0b3;
     border-radius: 12px;
     border-left: 6px solid #fcb0b3;
+    box-shadow: 0 0 12px #dab6fc88;
 }
 
 h2 {
@@ -66,7 +67,7 @@ h2 {
 }
 
 .skills li {
-    background-color: #3b3b3b;
+    background-color: #a0e8af;
     padding: 10px 15px;
     border-radius: 8px;
     border-left: 4px solid #a0e8af;
@@ -74,7 +75,7 @@ h2 {
 
 /* Projects */
 .projects .project {
-    background-color: #3b3b3b;
+    background-color: #a0e8af;
     padding: 20px;
     border-radius: 10px;
     border-left: 4px solid #a0e8af;
@@ -119,6 +120,10 @@ footer a:hover {
 
 footer h2 {
     color: #dab6fc;
+}
+
+footer .contact{
+ background-color:#dab6fc;
 }
 
 footer .copyright {
