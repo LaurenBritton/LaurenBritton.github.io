@@ -99,7 +99,7 @@ h2 {
 
 /* Footer */
 footer {
-    background-color: #5a3b66; /* same dark muted lavender for consistency */
+    background-color: #3b2a4f; /* same dark muted lavender for consistency */
     text-align: center;
     padding: 30px 20px;
     margin-top: 60px;
@@ -122,8 +122,8 @@ footer h2 {
     color: #dab6fc;
 }
 
-footer .contact{
- background-color:#dab6fc;
+footer section{
+ background-color:#3b2a4f;
 }
 
 footer .copyright {
