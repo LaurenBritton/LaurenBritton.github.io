@@ -18,14 +18,13 @@ body {
 
 /* Hero Section */
 header {
-    background-color: #dab6fc;
+    background-color: #3b2a4f; /* darker lavender shade */
     text-align: center;
     padding: 40px 20px;
     border-radius: 15px;
     box-shadow: 0 0 12px #dab6fc88;
-    color: #1e1e1e;
+    color: #f7f7f7; /* light text on dark background */
 }
-
 .profile-img {
     width: 120px;
     height: 120px;
@@ -48,7 +47,7 @@ header {
 section {
     margin-top: 40px;
     padding: 25px;
-    background-color: #2a2a2a;
+    background-color: #2e2e3a;
     border-radius: 12px;
     border-left: 6px solid #fcb0b3;
 }
@@ -99,40 +98,29 @@ h2 {
 
 /* Footer */
 footer {
-    background-color: #dab6fc;
+    background-color: #5a3b66; /* same dark muted lavender for consistency */
     text-align: center;
     padding: 30px 20px;
     margin-top: 60px;
     border-radius: 15px;
     box-shadow: 0 0 12px #dab6fc88;
-    color: #1e1e1e;
+    color: #f7f7f7;
 }
 
 footer a {
-    color: #1e1e1e;
+    color: #a0e8af; /* mint pastel link */
     text-decoration: none;
     font-weight: 600;
 }
 
 footer a:hover {
-    color: #fcb0b3;
+    color: #fcb0b3; /* pink pastel hover */
 }
 
 footer h2 {
-    color: #1e1e1e;
-}
-
-footer i {
-    margin-right: 6px;
-}
-
-footer p {
-    margin-top: 10px;
-    line-height: 1.4;
+    color: #dab6fc;
 }
 
 footer .copyright {
-    margin-top: 20px;
-    font-size: 0.85em;
-    color: #444;
+    color: #cccccc;
 }
