@@ -8,37 +8,60 @@
     <title> Lauren Britton | Portfolio</title>
     
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1> Lauren Britton </h1>
-        <p> Junior Developer | Flutter | Firebase </p>
+        <h1>Lauren Britton</h1>
+        <p class="tagline">Junior Developer | Flutter | Firebase</p>
     </header>
 
     <main>
-        <section>
-            <h2> Projects </h2>
+        <!-- About Me -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                I'm a soon-to-be graduate with a BSc in Software Development for Business based in Glasgow. 
+                I'm passionate about building practical, user-focused software solutions—particularly using Flutter, Firebase, and cloud technologies. 
+                My goal is to join a team where I can continue to grow while contributing to impactful projects.
+            </p>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills">
+            <h2>Skills</h2>
             <ul>
-                <li>
-                    <strong> Family Task Board</strong><br />
-                    A Flutter app for managing shared family tasks.
-                    <a href ="https://github.com/LaurenBritton/family-task-board">[GitHub]</a>
-                </li>
+                <li>Flutter</li>
+                <li>Firebase</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>AWS (Lambda, S3, Rekognition)</li>
+                <li>SQL & Firestore</li>
             </ul>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Family Task Board</h3>
+                <p>A Flutter app for managing shared family tasks with role-based access and real-time updates.</p>
+                <a href="https://github.com/LaurenBritton/family-task-board" target="_blank">View on GitHub</a>
+            </div>
         </section>
 
         
     </main>
 
+    <!-- Footer -->
     <footer>
-        <section>
-            <h2> Contact</h2>
-            <p> Email: LaurenBritton237@gmail.com</p>
-            <p> LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
-
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>📧 <a href="mailto:LaurenBritton237@gmail.com">LaurenBritton237@gmail.com</a></p>
+            <p>💼 <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
         </section>
-        <p>© 2025 Lauren Britton</p>
+        <p class="copyright">© 2025 Lauren Britton</p>
     </footer>
 </body>
 
