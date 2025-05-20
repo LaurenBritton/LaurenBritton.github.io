@@ -53,6 +53,10 @@ section {
     box-shadow: 0 0 12px #dab6fc88;
 }
 
+.about {
+background-color:#fcb0b3;
+}
+
 h2 {
     font-size: 1.8em;
     color: #dab6fc;
