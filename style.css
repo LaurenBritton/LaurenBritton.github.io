@@ -1,3 +1,4 @@
+/* Base Styling */
 body {
     font-family: 'Inter', Arial, sans-serif;
     max-width: 800px;
@@ -13,11 +14,12 @@ header {
     padding: 20px 0;
     background-color: #d7ecf2;
     border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 header h1 {
     margin-bottom: 10px;
-    font-size: 2.2em;
+    font-size: 2.4em;
     color: #333;
 }
 
@@ -26,6 +28,48 @@ header h1 {
     color: #555;
 }
 
+/* About Me */
+.about {
+    margin-top: 40px;
+    background-color: #fff5ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.about h2 {
+    color: #5d3b8c;
+}
+
+/* Skills */
+.skills {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f0ebfa;
+    border-radius: 10px;
+}
+
+.skills h2 {
+    color: #5d3b8c;
+}
+
+.skills ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.skills li {
+    background-color: #e3d2f2;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.95em;
+}
+
+/* Projects */
 .projects {
     margin-top: 40px;
 }
@@ -62,6 +106,7 @@ header h1 {
     text-decoration: underline;
 }
 
+/* Footer */
 footer {
     margin-top: 60px;
     text-align: center;
