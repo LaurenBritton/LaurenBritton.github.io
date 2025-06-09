@@ -1,71 +1,106 @@
-<!DOCTYPE html> 
+<!-- Root: your-portfolio-repo/index.html -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Lauren Britton | Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lauren Britton | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Shared CSS in root -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
-    <header>
-        <div class="hero">
-            <img src="profile.jpg" alt="Lauren Britton" class="profile-img">
-            <h1>Lauren Britton</h1>
-            <p class="tagline">Junior Developer | Flutter | Firebase</p>
-        </div>
-    </header>
+  <!-- ───────────────── HEADER / HERO ───────────────── -->
+  <header>
+    <div class="hero">
+      <!-- Headshot lives in /assets/ -->
+      <img src="assets/portfolio-image.jpg" alt="Lauren Britton" class="profile-img" />
+      <div class="hero-text">
+        <h1>Lauren Britton</h1>
+        <p class="tagline">Junior Developer | Flutter | Firebase</p>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <!-- About Me -->
-        <section class="about">
-            <h2>About Me</h2>
-            <p>
-                I'm a soon-to-be graduate with a BSc in Software Development for Business based in Glasgow. 
-                I'm passionate about building practical, user-focused software solutions—particularly using Flutter, Firebase, and cloud technologies. 
-                My goal is to join a team where I can continue to grow while contributing to impactful projects.
-            </p>
-        </section>
+  <!-- ───────────────── MAIN CONTENT ───────────────── -->
+  <main>
+    <!-- About Me -->
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a soon‑to‑be graduate with a BSc in Software Development for Business based in Glasgow.
+        I build practical, user‑focused software—particularly using Flutter, Firebase, and cloud technologies.
+        I'm seeking a team where I can keep growing while contributing to impactful projects.
+      </p>
+    </section>
 
-        <!-- Skills -->
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Flutter</li>
-                <li>Firebase</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>AWS (Lambda, S3, Rekognition)</li>
-                <li>SQL & Firestore</li>
-            </ul>
-        </section>
+    <!-- Skills -->
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Flutter</li>
+        <li>Firebase</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>AWS (Lambda, S3, Rekognition)</li>
+        <li>SQL & Firestore</li>
+      </ul>
+    </section>
 
-        <!-- Projects -->
-        <section class="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Family Task Board</h3>
-                <p>A Flutter app for managing shared family tasks with role-based access and real-time updates.</p>
-                <a href="https://github.com/LaurenBritton/family-task-board" target="_blank">
-                    <i class="fab fa-github"></i> View on GitHub
-                </a>
-            </div>
-        </section>
-    </main>
+    <!-- Projects (static list) -->
+    <section class="projects">
+      <h2>Projects</h2>
 
-    <!-- Footer -->
-    <footer>
-        <section class="contact">
-            <h2>Contact</h2>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:LaurenBritton237@gmail.com">LaurenBritton237@gmail.com</a></p>
-            <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-        </section>
-        <p class="copyright">© 2025 Lauren Britton</p>
-    </footer>
+      <!-- Family Task Board mini‑project page lives in /projects/ -->
+      <div class="project">
+        <h3>Family Task Board</h3>
+        <p>A Flutter app for managing shared family tasks with role‑based access and real‑time updates.</p>
+        <a href="projects/family-task-board.html">
+          <i class="fas fa-arrow-right"></i> Read case study
+        </a>
+        &nbsp;•&nbsp;
+        <a href="https://github.com/LaurenBritton/family-task-board" target="_blank">
+          <i class="fab fa-github"></i> Source
+        </a>
+      </div>
+    </section>
+
+    <!-- Blog feed pulled dynamically from /blogs/ folder via JS (auto‑lists *.html) -->
+    <section class="blog">
+      <h2>Blog</h2>
+      <ul id="blog-list"></ul>
+      <noscript><p><a href="blogs/">View blog archive</a></p></noscript>
+    </section>
+
+    <!-- GitHub Project progress (issues board) -->
+    <section class="tasks">
+      <h2>Current Tasks</h2>
+      <ul id="issues"><!-- Populated by fetchIssues.js --></ul>
+      <p class="tasks-note">This list reflects open tasks from the <a href="https://github.com/LaurenBritton/software-portfolio-site/projects" target="_blank">GitHub Project board</a>.</p>
+    </section>
+  </main>
+
+  <!-- ───────────────── FOOTER ───────────────── -->
+  <footer>
+    <section class="contact">
+      <h2>Contact</h2>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:LaurenBritton237@gmail.com">LaurenBritton237@gmail.com</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    </section>
+    <p class="copyright">© 2025 Lauren Britton</p>
+  </footer>
+
+  <!-- ───────────────── SCRIPTS ───────────────── -->
+  <!-- Auto‑list blog pages -->
+  <script src="scripts/fetchBlogList.js"></script>
+  <!-- Auto‑fetch GitHub issues for task tracking -->
+  <script src="scripts/fetchIssues.js"></script>
 </body>
 
 </html>
